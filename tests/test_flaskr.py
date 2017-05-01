@@ -69,7 +69,7 @@ def test_add_entries_login(client):
         assert b'You were logged in' in rv.data
         rv = client.post('/add', data=dict(
             username='test',
-            password='test123'
+            password='Hema7067'
         ), follow_redirects=True)
         assert b'New entry was successfully posted' in rv.data
 
